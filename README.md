@@ -17,12 +17,12 @@
    - Загружаем файлы проекта на сервер:
 
 ```
-git clone https://github.com/shamandok/TBot_dating.git
+git clone https://github.com/shamandok/TBot_SalonSupport.git
 ```
    - Переходим в каталог загруженного проекта:
 
 ```
-cd TBot_dating
+cd TBot_SalonSupport
 ```
    - Создадим новое виртуальное окружение для Python:
 
