@@ -62,29 +62,29 @@ SET PASSWORD FOR 'shamandok'@'%' = 'pattaya2k19m17';
 ```
 show databases;
 ```
-   - Создадим базу данных с именем "dativert" и кодировкой UTF8 (RU/ENG)
+   - Создадим базу данных с именем "massuport" и кодировкой UTF8 (RU/ENG)
 ```
-CREATE DATABASE dativert CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE DATABASE massuport CHARACTER SET utf8 COLLATE utf8_general_ci;
 ```
    - Выдадим разрешения нашему пользователю к созданной базе данных, с "%" - любого хоста:
 ```
-GRANT ALL PRIVILEGES ON dativert.* TO 'shamandok'@'%';
+GRANT ALL PRIVILEGES ON massuport.* TO 'shamandok'@'%';
 ```
    - Начиная с Ubuntu 20.04 (используется Mysql 8) изминился запрос:
 ```
-GRANT ALL PRIVILEGES ON dativert.* TO 'shamandok'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON massuport.* TO 'shamandok'@'%' WITH GRANT OPTION;
 ```
    - Выберем нашу базу данных:
 ```
-use dativert;
+use massuport;
 ```
-   - Создадим таблицу "advert"
+   - Создадим таблицу "masuser"
 ```
-CREATE TABLE advert (id INT AUTO_INCREMENT PRIMARY KEY, city VARCHAR(50), gender VARCHAR(50), bodysize VARCHAR(150), search VARCHAR(255), description VARCHAR(255), username VARCHAR(50), user_id INT(11));
+CREATE TABLE masuser (id INT AUTO_INCREMENT PRIMARY KEY, data VARCHAR(50), time VARCHAR(50), seans VARCHAR(150), uzername VARCHAR(255), komments VARCHAR(255), kontakt VARCHAR(50), user_id INT(11));
 ```
-   -  Для очистки таблицы "advert" от записей:
+   -  Для очистки таблицы "masuser" от записей:
 ```
-TRUNCATE TABLE advert;
+TRUNCATE TABLE masuser;
 ```
 ####  ⚙️Настройки ####
    -  Откроем файл с настройками бота:
