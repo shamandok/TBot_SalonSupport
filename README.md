@@ -107,6 +107,10 @@ cd TBot_dating
 ```
 source venv/bin/activate
 ```
+   - Деактивировать virtualenv (если он активирован в текущем сеансе консоли):\
+```
+deactivate
+```
    - Запустить бот:
 ```
 python -OO bot.py
