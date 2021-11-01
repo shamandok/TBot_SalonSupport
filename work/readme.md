@@ -24,3 +24,5 @@ https://habr.com/ru/post/496516/
 https://delaney.gitbook.io/create-telegram-bot/
 
 https://robomongo.org
+
+https://sqliteman.dev
