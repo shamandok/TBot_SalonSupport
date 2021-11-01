@@ -26,3 +26,25 @@ https://delaney.gitbook.io/create-telegram-bot/
 https://robomongo.org
 
 https://sqliteman.dev
+
+
+Вот функция получения с сегодняшнего дня + указанные дни
+```python
+import datetime
+
+def get_date(dateFormat="%d-%m-%Y", addDays=0):
+
+    timeNow = datetime.datetime.now()
+    if (addDays!=0):
+        anotherTime = timeNow + datetime.timedelta(days=addDays)
+    else:
+        anotherTime = timeNow
+
+    return anotherTime.strftime(dateFormat)
+Применение:
+
+addDays = 3 #days
+output_format = '%d-%m-%Y'
+output = get_date(output_format, addDays)
+print output
+```
