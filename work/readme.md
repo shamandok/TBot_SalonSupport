@@ -19,3 +19,4 @@ C:\Users\shamandok\AppData\Local\Programs\Python\Python38-32\python.exe "E:/Salo
 
 Process finished with exit code 0
 ```
+https://habr.com/ru/post/496516/
