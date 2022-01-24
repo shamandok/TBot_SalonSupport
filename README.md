@@ -24,6 +24,11 @@ git clone https://github.com/shamandok/TBot_SalonSupport.git
 ```
 cd TBot_SalonSupport
 ```
+   - Устанавливаем python:
+
+```
+apt install python3.8
+```
    - Создадим новое виртуальное окружение для Python:
 
 ```
